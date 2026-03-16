@@ -63,6 +63,21 @@ color:#333;
 }
 
 
+.features-image {
+  display: grid;
+  grid-template-columns: repeat(2, 80px); /* quantas bolinhas por linha */
+  gap: 16px;
+}
+
+.features-image img {
+  width: 100px;
+  height: 100px;
+  padding: 11px;              /* espaço interno */
+  background-color: #f2f2f2;  /* cor da bolinha */
+  border-radius: 50%;         /* 🔴 vira círculo */
+  object-fit: contain;        /* não distorce */
+}
+
 /* HERO */
 
 .hero{
