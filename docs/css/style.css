@@ -63,19 +63,37 @@ color:#333;
 }
 
 
-.features-image {
-  display: grid;
-  grid-template-columns: repeat(2, 80px); /* quantas bolinhas por linha */
-  gap: 16px;
+.features-orbit {
+  --box-size: 420px;
+  --item-size: 100px;
+
+  position: relative;
+  width: var(--box-size);
+  height: var(--box-size);
+  margin: auto;
 }
 
-.features-image img {
-  width: 100px;
-  height: 100px;
-  padding: 11px;              /* espaço interno */
-  background-color: #f2f2f2;  /* cor da bolinha */
-  border-radius: 50%;         /* 🔴 vira círculo */
-  object-fit: contain;        /* não distorce */
+.orbit-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--item-size);
+  height: var(--item-size);
+  border-radius: 10%;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.orbit-item img {
+  width: 110%;
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
 }
 
 /* HERO */
