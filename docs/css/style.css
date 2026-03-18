@@ -45,7 +45,7 @@ padding:20px 0;
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:0px;
 font-weight:bold;
 }
 
@@ -53,11 +53,11 @@ font-weight:bold;
 width:30px;
 height:30px;
 background:var(--verde-musgo);
-border-radius:6px;
+border-radius:10px;
 }
 
 nav a{
-margin-left:20px;
+margin-left:30px;
 font-weight:600;
 color:#333;
 }
