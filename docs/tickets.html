@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <title>Tickets</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="./images/logo.png" alt="logo">
+        </div>
+
+        <a href="index.html" class="btn">GuideF</a>
+      </div>
+
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="suporte.html">Suporte</a> 
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+
+
+  </header>
+
+    <section class="tickets-page">
+        <div class="container">
+
+            <div class="tickets-header">
+                <h1>Acompanhe seus chamados ou realize novas solicitações</h1>
+            </div>
+
+            <div class="tickets-dashboard">
+                <h2>Gráficos</h2>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-bar bar-closed"></div>
+                        <p>Chamados fechados</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-bar bar-pending"></div>
+                        <p>Chamados pendentes</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-bar bar-waiting"></div>
+                        <p>Aguardando atendimento</p>
+                    </div>
+                </div>
+
+                <div class="tickets-action">
+                    <button type="button" class="btn" onclick="abrirModal()">Novo chamado</button>
+                </div>
+            </div>
+
+            <div class="tickets-open">
+                <h2>Chamados em aberto</h2>
+
+                <div class="tickets-filters">
+                    <input type="text" placeholder="Filtrar por título">
+                    <input type="text" placeholder="Filtrar por status">
+                    <input type="text" placeholder="Filtrar por data">
+                </div>
+
+                <div class="tickets-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Status</th>
+                                <th>Data</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Erro no sistema</td>
+                                <td>Pendente</td>
+                                <td>09/04/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Solicitação de suporte</td>
+                                <td>Em análise</td>
+                                <td>08/04/2026</td>
+                            </tr>
+                            <tr>
+                                <td>Atualização de cadastro</td>
+                                <td>Aguardando</td>
+                                <td>07/04/2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </section>
+            
+    <section class="dark-section">
+
+            <div class="container dark-content">
+
+                <h2>Contato</h2>
+                    <p>+55 (31) 9 7506-3000 </p>
+                    <p>shopguidef@gmail.com</p>
+
+            </div>
+
+        </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>@guidef</p>
+        </div>
+    </footer>
+
+    <div id="modalChamado" class="modal">
+        <div class="modal-content">
+            <h2>Novo chamado</h2>
+
+            <div class="form-row">
+                <input type="text" placeholder="Título">
+                <input type="datetime-local">
+            </div>
+
+            <textarea placeholder="Descrição"></textarea>
+
+            <div class="form-row">
+                <select>
+                    <option>Categoria</option>
+                    <option>Suporte</option>
+                    <option>Financeiro</option>
+                </select>
+
+                <input type="file">
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="Informações de contato">
+                    <button type="button" onclick="fecharModal()">Abrir</button>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
