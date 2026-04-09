@@ -1,95 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="pt-BR">
+<head>
+  <!-- -------------------- PÁGINA: SUPORTE | CONFIGURAÇÃO | FUNÇÃO: DEFINIR ACENTUAÇÃO E RESPONSIVIDADE -------------------- -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <mete charset="uft-8" />
-        <title>Tickets & Solicitações</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+  <!-- -------------------- PÁGINA: SUPORTE | CONFIGURAÇÃO | FUNÇÃO: IMPORTAR O CSS PRINCIPAL -------------------- -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <body>
+  <!-- -------------------- PÁGINA: SUPORTE | CONFIGURAÇÃO | FUNÇÃO: TÍTULO DA ABA DO NAVEGADOR -------------------- -->
+  <title>Tickets & Solicitações</title>
+</head>
 
+<body>
+
+  <!-- -------------------- PÁGINA: SUPORTE | SEÇÃO: CABEÇALHO | FUNÇÃO: EXIBIR LOGO E MENU -------------------- -->
   <header class="header">
     <div class="container nav">
+
+      <!-- -------------------- PÁGINA: SUPORTE | ELEMENTO: LOGO | FUNÇÃO: EXIBIR MARCA DO SITE -------------------- -->
       <div class="logo">
         <div class="logo-icon">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.png" alt="Logo da GuideF">
         </div>
 
         <a href="index.html" class="btn">GuideF</a>
       </div>
 
+      <!-- -------------------- PÁGINA: SUPORTE | ELEMENTO: MENU | FUNÇÃO: NAVEGAR ENTRE AS PÁGINAS -------------------- -->
       <nav>
         <a href="index.html">Início</a>
         <a href="servicos.html">Serviços</a>
-        <a href="suporte.html">Suporte</a> 
+        <a href="suporte.html">Suporte</a>
         <a href="contato.html">Contato</a>
       </nav>
     </div>
-
-
   </header>
 
-        <section class="hero">
+  <!-- -------------------- PÁGINA: SUPORTE | SEÇÃO: HERO | FUNÇÃO: EXPLICAR A ÁREA DE CHAMADOS E MOSTRAR BOTÃO DE ACESSO -------------------- -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Tickets e Solicitações</h1>
 
-            <div class="container hero-content">
+      <p>
+        Acompanhe seus tickets abertos ou realize novas solicitações.
+      </p>
 
-                <h1>Tickets e Solicitações</h1>
+      <!-- -------------------- PÁGINA: SUPORTE | BOTÃO | FUNÇÃO: ABRIR O MODAL DE LOGIN ANTES DE ENTRAR EM TICKETS -------------------- -->
+      <button type="button" class="btn" onclick="abrirModalLogin()">Tickets</button>
+    </div>
+  </section>
 
-                <p>
-                    Acompanhe seus tickets abertos ou realize novas solicitações.
-                </p>
+  <!-- -------------------- PÁGINA: SUPORTE | SEÇÃO: CONTATO FINAL | FUNÇÃO: MOSTRAR INFORMAÇÕES DE CONTATO -------------------- -->
+  <section class="dark-section">
+    <div class="container dark-content">
+      <h2>Contato</h2>
+      <p>+55 (31) 9 7506-3000</p>
+      <p>shopguidef@gmail.com</p>
+    </div>
+  </section>
 
-                <button type="button" class="btn" onclick="abrirModalLogin()">Tickets</button>
+  <!-- -------------------- PÁGINA: SUPORTE | SEÇÃO: RODAPÉ | FUNÇÃO: EXIBIR ASSINATURA FINAL -------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <p>@guidef</p>
+    </div>
+  </footer>
 
-            </div>
+  <!-- -------------------- PÁGINA: SUPORTE | MODAL | FUNÇÃO: POPUP DE LOGIN PARA ACESSAR A ÁREA DE CHAMADOS -------------------- -->
+  <div id="modalLogin" class="modal">
+    <div class="modal-content modal-login">
+      <h2>Login</h2>
 
-        </section>
+      <!-- -------------------- PÁGINA: SUPORTE | CAMPO | FUNÇÃO: INPUT DE USUÁRIO -------------------- -->
+      <input type="text" id="loginUsuario" placeholder="Usuário">
 
-        <section class="dark-section">
+      <!-- -------------------- PÁGINA: SUPORTE | CAMPO | FUNÇÃO: INPUT DE SENHA -------------------- -->
+      <input type="password" id="loginSenha" placeholder="Senha">
 
-            <div class="container dark-content">
+      <!-- -------------------- PÁGINA: SUPORTE | MENSAGEM | FUNÇÃO: EXIBIR ERRO DE LOGIN CASO OS CAMPOS FIQUEM VAZIOS -------------------- -->
+      <p id="loginErro" class="mensagem-erro"></p>
 
-                <h2>Contato</h2>
-                    <p>+55 (31) 9 7506-3000 </p>
-                    <p>shopguidef@gmail.com</p>
+      <!-- -------------------- PÁGINA: SUPORTE | LINHA DE BOTÕES | FUNÇÃO: EXIBIR AÇÕES DE CANCELAR E ENTRAR -------------------- -->
+      <div class="form-row">
+        <button type="button" class="btn-secundario" onclick="fecharModalLogin()">Cancelar</button>
+        <button type="button" onclick="fazerLogin()">Entrar</button>
+      </div>
 
-            </div>
+      <!-- -------------------- PÁGINA: SUPORTE | AJUDA DO LOGIN | FUNÇÃO: DIRECIONAR PARA CONTATO CASO O USUÁRIO NÃO TENHA ACESSO -------------------- -->
+      <p class="login-ajuda">
+        Não tem um login?
+        <a href="contato.html" onclick="fecharModalLogin()">Entre em contato</a>
+      </p>
+    </div>
+  </div>
 
-        </section>
+  <!-- -------------------- PÁGINA: SUPORTE | SCRIPT | FUNÇÃO: IMPORTAR O JAVASCRIPT DO SITE -------------------- -->
+  <script src="./js/script.js"></script>
 
-        <footer class="footer">
-
-            <div class="container">
-
-                <p>@guidef</p>
-
-            </div>
-
-        </footer>
-        <!-- MODAL LOGIN -->
-            <div id="modalLogin" class="modal">
-                <div class="modal-content modal-login">
-                    <h2>Login</h2>
-
-                    <input type="text" id="loginUsuario" placeholder="Usuário">
-                    <input type="password" id="loginSenha" placeholder="Senha">
-
-                    <p id="loginErro" class="mensagem-erro"></p>
-
-                    <div class="form-row">
-                        <button type="button" class="btn-secundario" onclick="fecharModalLogin()">Cancelar</button>
-                        <button type="button" onclick="fazerLogin()">Entrar</button>
-                            <p class="login-ajuda">
-                                 Não tem um login?
-                                <a href="contato.html" onclick="fecharModalLogin()">Entre em contato</a>
-                            </p>
-                    </div>
-                </div>
-            </div>
-
-        <script src="./js/script.js"></script>
-
-
-    </body>
+</body>
 </html>

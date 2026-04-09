@@ -1,92 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="pt-BR">
+<head>
+  <!-- -------------------- PÁGINA: SERVIÇOS | CONFIGURAÇÃO | FUNÇÃO: DEFINIR ACENTUAÇÃO E RESPONSIVIDADE -------------------- -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-        <mete charset="uft-8" />
-        <title>Portifolio</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+  <!-- -------------------- PÁGINA: SERVIÇOS | CONFIGURAÇÃO | FUNÇÃO: IMPORTAR O CSS PRINCIPAL -------------------- -->
+  <link rel="stylesheet" href="./css/style.css">
 
-    <body>
+  <!-- -------------------- PÁGINA: SERVIÇOS | CONFIGURAÇÃO | FUNÇÃO: TÍTULO DA ABA DO NAVEGADOR -------------------- -->
+  <title>Portfólio</title>
+</head>
 
+<body>
+
+  <!-- -------------------- PÁGINA: SERVIÇOS | SEÇÃO: CABEÇALHO | FUNÇÃO: EXIBIR LOGO E MENU -------------------- -->
   <header class="header">
     <div class="container nav">
+
+      <!-- -------------------- PÁGINA: SERVIÇOS | ELEMENTO: LOGO | FUNÇÃO: EXIBIR MARCA DO SITE -------------------- -->
       <div class="logo">
         <div class="logo-icon">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.png" alt="Logo da GuideF">
         </div>
 
         <a href="index.html" class="btn">GuideF</a>
       </div>
 
+      <!-- -------------------- PÁGINA: SERVIÇOS | ELEMENTO: MENU | FUNÇÃO: NAVEGAR ENTRE AS PÁGINAS -------------------- -->
       <nav>
         <a href="index.html">Início</a>
         <a href="servicos.html">Serviços</a>
-        <a href="suporte.html">Suporte</a> 
+        <a href="suporte.html">Suporte</a>
         <a href="contato.html">Contato</a>
       </nav>
     </div>
-
-
   </header>
 
-        <section class="hero">
+  <!-- -------------------- PÁGINA: SERVIÇOS | SEÇÃO: HERO | FUNÇÃO: APRESENTAR A PÁGINA DE SERVIÇOS -------------------- -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Portfólio de Serviços e Projetos</h1>
 
-            <div class="container hero-content">
+      <p>
+        Veja os projetos e serviços realizados, presencialmente e remotamente.
+      </p>
+    </div>
+  </section>
 
-                <h1>Portifolio de Serviços e Projetos</h1>
+  <!-- -------------------- PÁGINA: SERVIÇOS | SEÇÃO: LISTA DE SERVIÇOS | FUNÇÃO: MOSTRAR OS CARDS DOS SERVIÇOS OFERECIDOS -------------------- -->
+  <section class="features">
+    <div class="container">
 
-                <p>
-                    Veja os projetos e serviços realizados, presencialmente, remotamente.
-                </p>
+      <div class="features-list">
 
-            </div>
-
-        <div class="features-list">
-            <div class="feature-card">
-                <h3>Hardware & amp; Software</h3>
-                    <p>Manutenção especializada e instalação de softwares em geral.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Redes de computadores</h3>
-                    <p>Firewall, VPN, Switch(s), Racks, Servidores, Virtualização, Backup...</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Administração de SaaS</h3>
-                    <p>Microsoft 365, Google Workspace, migrações, Azure AD, Google Cloud Identity, etc.</p>
-            </div>
-
-            <div class="feature-card">
-                <h3>Analista de Suporte</h3>
-                    <p>Suporte N1/N2, redes, servidores, SaaS, migrações. Disponibilidade imediata.</p>
-            </div>
+        <!-- -------------------- PÁGINA: SERVIÇOS | CARD | FUNÇÃO: SERVIÇO DE HARDWARE E SOFTWARE -------------------- -->
+        <div class="feature-card">
+          <h3>Hardware &amp; Software</h3>
+          <p>Manutenção especializada e instalação de softwares em geral.</p>
         </div>
 
-        </section>
+        <!-- -------------------- PÁGINA: SERVIÇOS | CARD | FUNÇÃO: SERVIÇO DE REDES -------------------- -->
+        <div class="feature-card">
+          <h3>Redes de computadores</h3>
+          <p>Firewall, VPN, Switch(s), Racks, Servidores, Virtualização, Backup...</p>
+        </div>
 
-        <section class="dark-section">
+        <!-- -------------------- PÁGINA: SERVIÇOS | CARD | FUNÇÃO: SERVIÇO DE ADMINISTRAÇÃO DE SAAS -------------------- -->
+        <div class="feature-card">
+          <h3>Administração de SaaS</h3>
+          <p>Microsoft 365, Google Workspace, migrações, Azure AD, Google Cloud Identity, etc.</p>
+        </div>
 
-            <div class="container dark-content">
+        <!-- -------------------- PÁGINA: SERVIÇOS | CARD | FUNÇÃO: SERVIÇO DE SUPORTE TÉCNICO -------------------- -->
+        <div class="feature-card">
+          <h3>Analista de Suporte</h3>
+          <p>Suporte N1/N2, redes, servidores, SaaS, migrações. Disponibilidade imediata.</p>
+        </div>
 
-                <h2>Contato</h2>
-                    <p>+55 (31) 9 7506-3000 </p>
-                    <p>shopguidef@gmail.com</p>
+      </div>
+    </div>
+  </section>
 
-            </div>
+  <!-- -------------------- PÁGINA: SERVIÇOS | SEÇÃO: CONTATO FINAL | FUNÇÃO: MOSTRAR INFORMAÇÕES DE CONTATO -------------------- -->
+  <section class="dark-section">
+    <div class="container dark-content">
+      <h2>Contato</h2>
+      <p>+55 (31) 9 7506-3000</p>
+      <p>shopguidef@gmail.com</p>
+    </div>
+  </section>
 
-        </section>
+  <!-- -------------------- PÁGINA: SERVIÇOS | SEÇÃO: RODAPÉ | FUNÇÃO: EXIBIR ASSINATURA FINAL -------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <p>@guidef</p>
+    </div>
+  </footer>
 
-        <footer class="footer">
+  <!-- -------------------- PÁGINA: SERVIÇOS | SCRIPT | FUNÇÃO: IMPORTAR O JAVASCRIPT DO SITE -------------------- -->
+  <script src="./js/script.js"></script>
 
-            <div class="container">
-
-                <p>@guidef</p>
-
-            </div>
-
-        </footer>
-
-    </body>
+</body>
 </html>

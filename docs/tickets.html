@@ -1,154 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8" />
-    <title>Tickets</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <!-- -------------------- PÁGINA: TICKETS | CONFIGURAÇÃO | FUNÇÃO: DEFINIR ACENTUAÇÃO E RESPONSIVIDADE -------------------- -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- -------------------- PÁGINA: TICKETS | CONFIGURAÇÃO | FUNÇÃO: IMPORTAR O CSS PRINCIPAL -------------------- -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- -------------------- PÁGINA: TICKETS | CONFIGURAÇÃO | FUNÇÃO: TÍTULO DA ABA DO NAVEGADOR -------------------- -->
+  <title>Tickets</title>
 </head>
 
 <body>
 
+  <!-- -------------------- PÁGINA: TICKETS | SEÇÃO: CABEÇALHO | FUNÇÃO: EXIBIR LOGO E MENU -------------------- -->
   <header class="header">
     <div class="container nav">
+
+      <!-- -------------------- PÁGINA: TICKETS | ELEMENTO: LOGO | FUNÇÃO: EXIBIR MARCA DO SITE -------------------- -->
       <div class="logo">
         <div class="logo-icon">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.png" alt="Logo da GuideF">
         </div>
 
         <a href="index.html" class="btn">GuideF</a>
       </div>
 
+      <!-- -------------------- PÁGINA: TICKETS | ELEMENTO: MENU | FUNÇÃO: NAVEGAR ENTRE AS PÁGINAS -------------------- -->
       <nav>
         <a href="index.html">Início</a>
         <a href="servicos.html">Serviços</a>
-        <a href="suporte.html">Suporte</a> 
+        <a href="suporte.html">Suporte</a>
         <a href="contato.html">Contato</a>
       </nav>
     </div>
-
-
   </header>
 
-    <section class="tickets-page">
-        <div class="container">
+  <!-- -------------------- PÁGINA: TICKETS | SEÇÃO: CONTEÚDO PRINCIPAL | FUNÇÃO: ÁREA DE ACOMPANHAMENTO DOS CHAMADOS -------------------- -->
+  <section class="tickets-page">
+    <div class="container">
 
-            <div class="tickets-header">
-                <h1>Acompanhe seus chamados ou realize novas solicitações</h1>
-            </div>
+      <!-- -------------------- PÁGINA: TICKETS | CABEÇALHO DA ÁREA DE CHAMADOS | FUNÇÃO: EXIBIR O TÍTULO PRINCIPAL -------------------- -->
+      <div class="tickets-header">
+        <h1>Acompanhe seus chamados ou realize novas solicitações</h1>
+      </div>
 
-            <div class="tickets-dashboard">
-                <h2>Gráficos</h2>
+      <!-- -------------------- PÁGINA: TICKETS | PAINEL DE GRÁFICOS | FUNÇÃO: EXIBIR INDICADORES DE STATUS DOS CHAMADOS -------------------- -->
+      <div class="tickets-dashboard">
+        <h2>Gráficos</h2>
 
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-bar bar-closed"></div>
-                        <p>Chamados fechados</p>
-                    </div>
+        <!-- -------------------- PÁGINA: TICKETS | GRID DE INDICADORES | FUNÇÃO: MOSTRAR OS 3 STATUS PRINCIPAIS -------------------- -->
+        <div class="stats-grid">
 
-                    <div class="stat-card">
-                        <div class="stat-bar bar-pending"></div>
-                        <p>Chamados pendentes</p>
-                    </div>
+          <!-- -------------------- PÁGINA: TICKETS | CARD | FUNÇÃO: EXIBIR CHAMADOS FECHADOS -------------------- -->
+          <div class="stat-card">
+            <div class="stat-bar bar-closed"></div>
+            <p>Chamados fechados</p>
+          </div>
 
-                    <div class="stat-card">
-                        <div class="stat-bar bar-waiting"></div>
-                        <p>Aguardando atendimento</p>
-                    </div>
-                </div>
+          <!-- -------------------- PÁGINA: TICKETS | CARD | FUNÇÃO: EXIBIR CHAMADOS PENDENTES -------------------- -->
+          <div class="stat-card">
+            <div class="stat-bar bar-pending"></div>
+            <p>Chamados pendentes</p>
+          </div>
 
-                <div class="tickets-action">
-                    <button type="button" class="btn" onclick="abrirModal()">Novo chamado</button>
-                </div>
-            </div>
-
-            <div class="tickets-open">
-                <h2>Chamados em aberto</h2>
-
-                <div class="tickets-filters">
-                    <input type="text" placeholder="Filtrar por título">
-                    <input type="text" placeholder="Filtrar por status">
-                    <input type="text" placeholder="Filtrar por data">
-                </div>
-
-                <div class="tickets-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Título</th>
-                                <th>Status</th>
-                                <th>Data</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Erro no sistema</td>
-                                <td>Pendente</td>
-                                <td>09/04/2026</td>
-                            </tr>
-                            <tr>
-                                <td>Solicitação de suporte</td>
-                                <td>Em análise</td>
-                                <td>08/04/2026</td>
-                            </tr>
-                            <tr>
-                                <td>Atualização de cadastro</td>
-                                <td>Aguardando</td>
-                                <td>07/04/2026</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
+          <!-- -------------------- PÁGINA: TICKETS | CARD | FUNÇÃO: EXIBIR CHAMADOS AGUARDANDO ATENDIMENTO -------------------- -->
+          <div class="stat-card">
+            <div class="stat-bar bar-waiting"></div>
+            <p>Aguardando atendimento</p>
+          </div>
         </div>
-    </section>
-            
-    <section class="dark-section">
 
-            <div class="container dark-content">
-
-                <h2>Contato</h2>
-                    <p>+55 (31) 9 7506-3000 </p>
-                    <p>shopguidef@gmail.com</p>
-
-            </div>
-
-        </section>
-
-    <footer class="footer">
-        <div class="container">
-            <p>@guidef</p>
+        <!-- -------------------- PÁGINA: TICKETS | BOTÃO | FUNÇÃO: ABRIR MODAL PARA CRIAR NOVO CHAMADO -------------------- -->
+        <div class="tickets-action">
+          <button type="button" class="btn" onclick="abrirModal()">Novo chamado</button>
         </div>
-    </footer>
+      </div>
 
-    <div id="modalChamado" class="modal">
-        <div class="modal-content">
-            <h2>Novo chamado</h2>
+      <!-- -------------------- PÁGINA: TICKETS | SEÇÃO: CHAMADOS EM ABERTO | FUNÇÃO: EXIBIR FILTROS E TABELA -------------------- -->
+      <div class="tickets-open">
+        <h2>Chamados em aberto</h2>
 
-            <div class="form-row">
-                <input type="text" placeholder="Título">
-                <input type="datetime-local">
-            </div>
-
-            <textarea placeholder="Descrição"></textarea>
-
-            <div class="form-row">
-                <select>
-                    <option>Categoria</option>
-                    <option>Suporte</option>
-                    <option>Financeiro</option>
-                </select>
-
-                <input type="file">
-            </div>
-
-            <div class="form-row">
-                <input type="text" placeholder="Informações de contato">
-                    <button type="button" onclick="fecharModal()">Abrir</button>
+        <!-- -------------------- PÁGINA: TICKETS | FILTROS | FUNÇÃO: FILTRAR CHAMADOS POR TÍTULO, STATUS E DATA -------------------- -->
+        <div class="tickets-filters">
+          <input type="text" placeholder="Filtrar por título">
+          <input type="text" placeholder="Filtrar por status">
+          <input type="text" placeholder="Filtrar por data">
         </div>
+
+        <!-- -------------------- PÁGINA: TICKETS | TABELA | FUNÇÃO: LISTAR OS CHAMADOS EM ABERTO -------------------- -->
+        <div class="tickets-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Título</th>
+                <th>Status</th>
+                <th>Data</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Erro no sistema</td>
+                <td>Pendente</td>
+                <td>09/04/2026</td>
+              </tr>
+
+              <tr>
+                <td>Solicitação de suporte</td>
+                <td>Em análise</td>
+                <td>08/04/2026</td>
+              </tr>
+
+              <tr>
+                <td>Atualização de cadastro</td>
+                <td>Aguardando</td>
+                <td>07/04/2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     </div>
+  </section>
 
-    <script src="./js/script.js"></script>
+  <!-- -------------------- PÁGINA: TICKETS | SEÇÃO: CONTATO FINAL | FUNÇÃO: MOSTRAR INFORMAÇÕES DE CONTATO -------------------- -->
+  <section class="dark-section">
+    <div class="container dark-content">
+      <h2>Contato</h2>
+      <p>+55 (31) 9 7506-3000</p>
+      <p>shopguidef@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- -------------------- PÁGINA: TICKETS | SEÇÃO: RODAPÉ | FUNÇÃO: EXIBIR ASSINATURA FINAL -------------------- -->
+  <footer class="footer">
+    <div class="container">
+      <p>@guidef</p>
+    </div>
+  </footer>
+
+  <!-- -------------------- PÁGINA: TICKETS | MODAL | FUNÇÃO: POPUP PARA ABRIR NOVO CHAMADO SEM SAIR DA PÁGINA -------------------- -->
+  <div id="modalChamado" class="modal">
+    <div class="modal-content">
+      <h2>Novo chamado</h2>
+
+      <!-- -------------------- PÁGINA: TICKETS | LINHA DE CAMPOS | FUNÇÃO: TÍTULO E DATA/HORA DO CHAMADO -------------------- -->
+      <div class="form-row">
+        <input type="text" placeholder="Título">
+        <input type="datetime-local">
+      </div>
+
+      <!-- -------------------- PÁGINA: TICKETS | CAMPO | FUNÇÃO: DESCRIÇÃO DO CHAMADO -------------------- -->
+      <textarea placeholder="Descrição"></textarea>
+
+      <!-- -------------------- PÁGINA: TICKETS | LINHA DE CAMPOS | FUNÇÃO: CATEGORIA E ANEXO -------------------- -->
+      <div class="form-row">
+        <select>
+          <option>Categoria</option>
+          <option>Suporte</option>
+          <option>Financeiro</option>
+        </select>
+
+        <input type="file">
+      </div>
+
+      <!-- -------------------- PÁGINA: TICKETS | LINHA DE CAMPOS | FUNÇÃO: INFORMAÇÕES DE CONTATO E BOTÃO FINAL -------------------- -->
+      <div class="form-row">
+        <input type="text" placeholder="Informações de contato">
+        <button type="button" onclick="fecharModal()">Abrir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------- PÁGINA: TICKETS | SCRIPT | FUNÇÃO: IMPORTAR O JAVASCRIPT DO SITE -------------------- -->
+  <script src="./js/script.js"></script>
 
 </body>
 </html>

@@ -1,83 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+  <!-- -------------------- PÁGINA: INICIAL | CONFIGURAÇÃO | FUNÇÃO: DEFINIR ACENTUAÇÃO E RESPONSIVIDADE -------------------- -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- -------------------- PÁGINA: INICIAL | CONFIGURAÇÃO | FUNÇÃO: IMPORTAR O CSS PRINCIPAL DO SITE -------------------- -->
   <link rel="stylesheet" href="./css/style.css">
+
+  <!-- -------------------- PÁGINA: INICIAL | CONFIGURAÇÃO | FUNÇÃO: TÍTULO EXIBIDO NA ABA DO NAVEGADOR -------------------- -->
   <title>Outsourcing e Troubleshooting</title>
 </head>
 
 <body>
-  
+
+  <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: CABEÇALHO | FUNÇÃO: EXIBIR LOGO E MENU DE NAVEGAÇÃO -------------------- -->
   <header class="header">
     <div class="container nav">
+
+      <!-- -------------------- PÁGINA: INICIAL | ELEMENTO: LOGO | FUNÇÃO: MOSTRAR ÍCONE E NOME DA MARCA -------------------- -->
       <div class="logo">
         <div class="logo-icon">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.png" alt="Logo da GuideF">
         </div>
 
         <a href="index.html" class="btn">GuideF</a>
       </div>
 
+      <!-- -------------------- PÁGINA: INICIAL | ELEMENTO: MENU | FUNÇÃO: NAVEGAR ENTRE AS PÁGINAS DO SITE -------------------- -->
       <nav>
         <a href="index.html">Início</a>
         <a href="servicos.html">Serviços</a>
-        <a href="suporte.html">Suporte</a> 
+        <a href="suporte.html">Suporte</a>
         <a href="contato.html">Contato</a>
       </nav>
     </div>
-
-
   </header>
 
+  <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: HERO | FUNÇÃO: APRESENTAR O SITE COM TÍTULO, TEXTO E BOTÃO PRINCIPAL -------------------- -->
   <section class="hero">
     <div class="container hero-content">
       <h1>Soluções em informática que aumentam sua produtividade</h1>
-      <p>Utilize tecnologia e configurações automatizadas para melhorar a 
-         produtividade dos seus processos.</p>
-      <a href="#" class="btn">Saiba Mais</a>
+
+      <p>
+        Utilize tecnologia e configurações automatizadas para melhorar a
+        produtividade dos seus processos.
+      </p>
+
+      <a href="servicos.html" class="btn">Saiba Mais</a>
     </div>
   </section>
 
+  <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: SERVIÇOS E ANIMAÇÃO | FUNÇÃO: MOSTRAR ÍCONES GIRANDO E CARDS DE SERVIÇOS -------------------- -->
   <section class="features">
-
-    
     <div class="container features-grid">
 
+      <!-- -------------------- PÁGINA: INICIAL | ELEMENTO: ÓRBITA DE ÍCONES | FUNÇÃO: EXIBIR ANIMAÇÃO DOS ÍCONES DE TECNOLOGIA -------------------- -->
       <div class="features-orbit" id="featuresOrbit">
         <div class="orbit-item">
           <img src="./images/SaaS.png" alt="SaaS">
+        </div>
+
+        <div class="orbit-item">
+          <img src="./images/rack.png" alt="Rack">
+        </div>
+
+        <div class="orbit-item">
+          <img src="./images/analista.png" alt="Analista">
+        </div>
+
+        <div class="orbit-item">
+          <img src="./images/hardware.png" alt="Hardware">
+        </div>
       </div>
 
-      <div class="orbit-item">
-        <img src="./images/rack.png" alt="Rack">
-      </div>
-
-      <div class="orbit-item">
-        <img src="./images/analista.png" alt="Analista">
-      </div>
-
-      <div class="orbit-item">
-        <img src="./images/hardware.png" alt="Hardware">
-      </div>
-  </div>
-
+      <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: CARDS DE SERVIÇOS | FUNÇÃO: RESUMIR OS PRINCIPAIS SERVIÇOS OFERECIDOS -------------------- -->
       <div class="features-list">
+
+        <!-- -------------------- PÁGINA: INICIAL | CARD | FUNÇÃO: SERVIÇO DE HARDWARE E SOFTWARE -------------------- -->
         <div class="feature-card">
-          <h3>Hardware & amp; Software</h3>
+          <h3>Hardware &amp; Software</h3>
           <p>Manutenção especializada e instalação de softwares em geral.</p>
         </div>
 
+        <!-- -------------------- PÁGINA: INICIAL | CARD | FUNÇÃO: SERVIÇO DE REDES -------------------- -->
         <div class="feature-card">
           <h3>Redes de computadores</h3>
           <p>Firewall, VPN, Switch(s), Racks, Servidores, Virtualização, Backup...</p>
         </div>
 
+        <!-- -------------------- PÁGINA: INICIAL | CARD | FUNÇÃO: SERVIÇO DE ADMINISTRAÇÃO DE SAAS -------------------- -->
         <div class="feature-card">
           <h3>Administração de SaaS</h3>
           <p>Microsoft 365, Google Workspace, migrações, Azure AD, Google Cloud Identity, etc.</p>
         </div>
 
+        <!-- -------------------- PÁGINA: INICIAL | CARD | FUNÇÃO: SERVIÇO DE SUPORTE TÉCNICO -------------------- -->
         <div class="feature-card">
           <h3>Analista de Suporte</h3>
           <p>Suporte N1/N2, redes, servidores, SaaS, migrações. Disponibilidade imediata.</p>
@@ -86,21 +104,24 @@
     </div>
   </section>
 
+  <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: CONTATO FINAL | FUNÇÃO: MOSTRAR INFORMAÇÕES DE CONTATO -------------------- -->
   <section class="dark-section" id="contato">
     <div class="container dark-content">
       <h2>Contato</h2>
-          <p>+55 (31) 9 7506-3000 </p>
-          <p>shopguidef@gmail.com</p>
+      <p>+55 (31) 9 7506-3000</p>
+      <p>shopguidef@gmail.com</p>
     </div>
   </section>
 
+  <!-- -------------------- PÁGINA: INICIAL | SEÇÃO: RODAPÉ | FUNÇÃO: EXIBIR ASSINATURA FINAL DO SITE -------------------- -->
   <footer class="footer">
     <div class="container">
       <p>@guidef</p>
     </div>
   </footer>
 
-<script src="./js/script.js"></script>
+  <!-- -------------------- PÁGINA: INICIAL | SCRIPT | FUNÇÃO: IMPORTAR O JAVASCRIPT DO SITE -------------------- -->
+  <script src="./js/script.js"></script>
 
 </body>
 </html>
