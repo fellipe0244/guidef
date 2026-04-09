@@ -436,3 +436,20 @@ color:var(--branco);
 .modal-content button:hover {
   background: var(--verde-claro);
 }
+
+.login-ajuda {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #cfcfcf;
+}
+
+.login-ajuda a {
+  color: var(--verde-claro);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-ajuda a:hover {
+  text-decoration: underline;
+}

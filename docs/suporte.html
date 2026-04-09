@@ -40,7 +40,7 @@
                     Acompanhe seus tickets abertos ou realize novas solicitações.
                 </p>
 
-                <a href="tickets.html" class="btn">Tickets</a>
+                <button type="button" class="btn" onclick="abrirModalLogin()">Tickets</button>
 
             </div>
 
@@ -67,6 +67,29 @@
             </div>
 
         </footer>
+        <!-- MODAL LOGIN -->
+            <div id="modalLogin" class="modal">
+                <div class="modal-content modal-login">
+                    <h2>Login</h2>
+
+                    <input type="text" id="loginUsuario" placeholder="Usuário">
+                    <input type="password" id="loginSenha" placeholder="Senha">
+
+                    <p id="loginErro" class="mensagem-erro"></p>
+
+                    <div class="form-row">
+                        <button type="button" class="btn-secundario" onclick="fecharModalLogin()">Cancelar</button>
+                        <button type="button" onclick="fazerLogin()">Entrar</button>
+                            <p class="login-ajuda">
+                                 Não tem um login?
+                                <a href="contato.html" onclick="fecharModalLogin()">Entre em contato</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+        <script src="./js/script.js"></script>
+
 
     </body>
 </html>
